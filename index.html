@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Uygulamaları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!--Flexbox Uygulama Örnekleri-->
+    <!--TODO 1.Temel Flexbox -->
+    <section>
+        <h2>1-display:flex</h2>
+        <div class="container basic">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </section>
+    
+    <!--TODO 2.Yatay Hizalama -->
+    <section>
+        <h2>2-justify-content</h2>
+        <div class="container justify">
+            <div>start</div>
+            <div>center</div>
+            <div>end</div>
+        </div>
+    </section>
+    <!--TODO 3.Dikey Hizalama -->
+     <!--!align-items özelliği ,flex container içindeki kutuların dikey hizalamasını(yani y ekseni boyunca hizasını) belirler. -->
+    <section>
+        <h2>3-align-items</h2>
+        <div class="container align-items">
+            <div>top</div>
+            <div>center</div>
+            <div>bottom</div>
+        </div>
+    </section>
+    <!--TODO 4.Yön -->
+    <section>
+        <h2>4-flex-direction</h2>
+        <div class="container direction">
+            <div>row</div>
+            <div>row</div>
+            <div>row</div>
+        </div>
+        <div class="container direction-column">
+            <div>column</div>
+            <div>column</div>
+            <div>column</div>   
+        </div>
+    </section>
+    <!--TODO 5.Sarma -->
+    <section>
+        <h2>5-flex-wrap</h2>
+        <div class="container wrap">
+            <div>1</div><div>2</div><div>3</div>
+            <div>4</div><div>5</div><div>6</div>   
+        </div>
+    </section>
+    <!--TODO 6.align-content -->
+    <section>
+        <h2>6-align-content</h2>
+        <div class="container align-content">
+            <div>1</div><div>2</div><div>3</div>
+            <div>4</div><div>5</div><div>6</div> 
+        </div>
+    </section>
+    <!--TODO 7.order -->
+    <!--Flex-container içindeki çocuk elemanların sırasını değiştirmek için kullanılır.Daha küçük bir order değeri olan ve negatif olan elemanlar önce görülür.-->
+    <section>
+        <h2>7-order</h2>
+        <div class="container order">
+            <div style="order:3">1</div>
+            <div style="order:1">2</div>
+            <div style="order:2">3</div>
+        </div>
+    </section>
+    <!--TODO 8.flex-grow/flex-shrink -->
+    <!--Flex değeri ne kadar büyükse eleman o kadar boş alanı doldurur.Burada en büyük değer mavide.*/-->
+    <section>
+        <h2>8-flex-grow&flex-shrink</h2>
+        <div class="container grow">
+            <div class="grow1">Grow 1</div>
+            <div class="grow2">Grow 2</div>
+            <div class="grow3">Grow 3</div>
+        </div>
+    </section>
+    <!--TODO 9.align-self -->
+    <!--Align-self,tek bir flex item.ın(elemanın) kendi dikey hizalamasını kontrol etmek için kullanılır.Sadece bir tek elemanı hizalar.Yani cont.daki diğer elemanlardan bağımsız olarak sadece o elemanı yukarı,ortaya veye aşağı hizalayabilirsiniz -->
+    <section>
+        <h2>9-align-self</h2>
+        <div class="container self">
+            <div>1</div>
+            <div style="align-self:center;">2 (center)</div>
+            <div style="align-self: flex-end;">3 (end)</div>
+        </div>
+    </section>   
+</body>
+</html>
